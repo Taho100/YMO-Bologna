@@ -1,24 +1,13 @@
-/**
- * Islamic Youth Organization Website
- * Main JavaScript File
- * Handles: Navigation, Dynamic Data Loading, Form Validation
- */
-
-// ============================================================================
 // 1. HAMBURGER MENU TOGGLE
-// ============================================================================
-
 document.addEventListener('DOMContentLoaded', function () {
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    // Toggle mobile menu visibility
+    //Menu per mobile
     if (hamburgerBtn) {
         hamburgerBtn.addEventListener('click', function () {
             mobileMenu.classList.toggle('hidden');
         });
-
-        // Close menu when a link is clicked
         const menuLinks = mobileMenu.querySelectorAll('a');
         menuLinks.forEach(link => {
             link.addEventListener('click', function () {
@@ -27,10 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // ========================================================================
     // 2. FETCH MESSAGE (Messaggio della settimana) da JSON
-    // ========================================================================
-
     const messageContainer = document.getElementById('message-container');
     if (messageContainer) {
         fetchMessageOfTheWeek();
@@ -82,10 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // ========================================================================
     // 3. CONTACT FORM VALIDATION & SUBMISSION
-    // ========================================================================
-
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', handleFormSubmit);
@@ -101,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const subject = document.getElementById('subject').value;
         const message = document.getElementById('message').value.trim();
 
-        // Basic validation
         if (!name || !email || !subject || !message) {
             showFormFeedback('Please fill in all required fields.', 'error');
             return;
@@ -114,14 +96,12 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // If all validation passes, show success message
-        // In a real application, this would send data to a server
-        showFormFeedback('Thank you for your message! We\'ll get back to you soon.', 'success');
+        // Se tutto ok, mostra il messaggio verde
+        showFormFeedback('Grazie per il tuo messaggio! Ti risponderemo al più presto.', 'Fatto');
 
         // Reset form
         contactForm.reset();
-
-        // Log form data (for demonstration)
+        
         console.log({
             name,
             email,
@@ -144,18 +124,13 @@ document.addEventListener('DOMContentLoaded', function () {
             } else if (type === 'success') {
                 feedbackDiv.classList.add('bg-green-100', 'text-green-800');
             }
-
-            // Auto-hide feedback after 5 seconds
+            
             setTimeout(() => {
                 feedbackDiv.classList.add('hidden');
             }, 5000);
         }
     }
-
-    // ========================================================================
-    // 4. SMOOTH SCROLL FOR ANCHOR LINKS (Optional Enhancement)
-    // ========================================================================
-
+//smooth scrool
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
