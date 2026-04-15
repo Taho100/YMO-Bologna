@@ -12,7 +12,7 @@
 </head>
 <body class="font-['Poppins'] bg-[#FDFBF7]">
 
-    <!-- Navigation Bar -->
+    <!-- Nav Bar -->
     <nav class="sticky top-0 z-50 bg-[#1B4332] shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
@@ -30,14 +30,14 @@
                     </a>
                 </div>
 
-                <!-- Desktop Navigation Links -->
+                <!-- Desktop Nav -->
                 <div class="hidden md:flex space-x-8">
                     <a href="index.html" class="text-[#FDFBF7] hover:text-[#D4AF37] transition-colors duration-300 font-medium">Home</a>
                     <a href="about.html" class="text-[#FDFBF7] hover:text-[#D4AF37] transition-colors duration-300 font-medium">Chi siamo</a>
                     <a href="contact.html" class="text-[#FDFBF7] hover:text-[#D4AF37] transition-colors duration-300 font-medium">Contattaci</a>
                 </div>
 
-                <!-- Mobile Hamburger Menu Button -->
+                <!-- Mobile Menu -->
                 <div class="md:hidden">
                     <button id="hamburger-btn" class="text-[#D4AF37] focus:outline-none" aria-label="Toggle menu">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -47,7 +47,7 @@
                 </div>
             </div>
 
-            <!-- Mobile Navigation Menu -->
+            <!-- Mobile Nav Menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <a href="index.html" class="block text-[#FDFBF7] hover:text-[#D4AF37] py-2 px-4 transition-colors">Home</a>
                 <a href="about.html" class="block text-[#FDFBF7] hover:text-[#D4AF37] py-2 px-4 transition-colors">Chi siamo</a>
@@ -56,7 +56,7 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
+    <!-- Header -->
     <section class="bg-[#1B4332] text-[#FDFBF7] py-12 md:py-16 text-center">
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Contatta Noi</h1>
         <p class="text-base sm:text-lg mt-4 text-[#D4AF37]">Siamo qui per aiutarti</p>
@@ -65,7 +65,6 @@
     <!-- Contact Section -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         
-        <!-- Intro Paragraph -->
         <div class="text-center mb-10 md:mb-14">
             <p class="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
                 Hai domande o vuoi unirti alla nostra comunità? Siamo qui per aiutarti! Compila il modulo sottostante e ti risponderemo 
@@ -74,15 +73,13 @@
             </p>
         </div>
 
-        <!-- Contact Form & Info Layout -->
+        <!-- Contact Form -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-
-            <!-- Contact Form -->
             <div>
                 <h2 class="text-2xl sm:text-3xl font-bold text-[#1B4332] mb-6">Invia un Messaggio</h2>
                 
                 <form id="contact-form" class="space-y-6">
-                    <!-- Name Field -->
+                    <!-- Nome -->
                     <div>
                         <label for="name" class="block text-sm font-semibold text-[#1B4332] mb-2">Nome Completo *</label>
                         <input 
@@ -95,7 +92,7 @@
                         >
                     </div>
 
-                    <!-- Email Field -->
+                    <!-- Email -->
                     <div>
                         <label for="email" class="block text-sm font-semibold text-[#1B4332] mb-2">Indirizzo Email *</label>
                         <input 
@@ -108,7 +105,7 @@
                         >
                     </div>
 
-                    <!-- Phone Field -->
+                    <!-- telefono -->
                     <div>
                         <label for="phone" class="block text-sm font-semibold text-[#1B4332] mb-2">Numero di Telefono</label>
                         <input 
@@ -120,7 +117,7 @@
                         >
                     </div>
 
-                    <!-- Subject Field -->
+                    <!-- oggetto -->
                     <div>
                         <label for="subject" class="block text-sm font-semibold text-[#1B4332] mb-2">Oggetto *</label>
                         <select 
@@ -130,15 +127,16 @@
                             class="w-full px-4 py-3 border-2 border-[#D4AF37] rounded-lg bg-white text-gray-800 focus:outline-none focus:border-[#1B4332] transition-colors"
                         >
                             <option value="">-- Seleziona un oggetto --</option>
-                            <option value="general">Domanda Generale</option>
+                            <option value="generale">Domanda Generale</option>
                             <option value="program">Informazioni sul Programma</option>
-                            <option value="volunteer">Opportunità di Volontariato</option>
-                            <option value="event">Invito a Evento</option>
+                            <option value="volontario">Opportunità di Volontariato</option>
+                            <option value="evento">Invito a Evento</option>
+                            <option value="Nai">Redwan vai re dhoira pidamu😁</option>
                             <option value="other">Altro</option>
                         </select>
                     </div>
 
-                    <!-- Message Field -->
+                    <!-- Messaggio -->
                     <div>
                         <label for="message" class="block text-sm font-semibold text-[#1B4332] mb-2">Messaggio *</label>
                         <textarea 
@@ -151,7 +149,7 @@
                         ></textarea>
                     </div>
 
-                    <!-- Submit Button -->
+                    <!-- bottone invia -->
                     <button 
                         type="submit" 
                         class="w-full bg-[#1B4332] hover:bg-[#0f2818] text-[#FDFBF7] font-bold py-3 px-6 rounded-lg transition-colors duration-300 text-base md:text-lg"
@@ -159,12 +157,11 @@
                         Invia Messaggio
                     </button>
 
-                    <!-- Form Feedback Message -->
                     <div id="form-feedback" class="hidden p-4 rounded-lg text-center"></div>
                 </form>
             </div>
 
-            <!-- Contact Information -->
+            <!-- Informazioni -->
             <div>
                 <h2 class="text-2xl sm:text-3xl font-bold text-[#1B4332] mb-6">Contattaci</h2>
                 
@@ -178,7 +175,7 @@
                         </div>
                         <div>
                             <h3 class="text-lg font-semibold text-[#1B4332] mb-1">Indirizzo</h3>
-                            <p class="text-gray-700">Via del Corso, 123</p>
+                            <p class="text-gray-700">Via del janina, 123</p>
                         </div>
                     </div>
 
@@ -191,7 +188,7 @@
                         </div>
                         <div>
                             <h3 class="text-lg font-semibold text-[#1B4332] mb-1">Telefono</h3>
-                            <p class="text-gray-700">+39 123-4567</p>
+                            <p class="text-gray-700">+39 00000000</p>
                         </div>
                     </div>
 
