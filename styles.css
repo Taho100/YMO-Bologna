@@ -15,8 +15,8 @@
 .glass-card {
     /* Sfondo semi-trasparente con blur effect */
     background: rgba(27, 67, 50, 0.15);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(10px);
     
     /* Border sottile con sfumatura dorata */
     border: 2px solid rgba(212, 175, 55, 0.3);
