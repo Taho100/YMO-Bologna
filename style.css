@@ -1,0 +1,136 @@
+/**
+ * Islamic Youth Organization Website
+ * Custom CSS (Supplementary to Tailwind)
+ */
+
+/* Smooth transitions globally */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ========================================================================
+   GLASS MORPHISM CARD STYLE - Message of the Week
+   ======================================================================== */
+
+.glass-card {
+    /* Sfondo semi-trasparente con blur effect */
+    background: rgba(27, 67, 50, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    /* Border sottile con sfumatura dorata */
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    border-radius: 12px;
+    
+    /* Padding responsive */
+    padding: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .glass-card {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .glass-card {
+        padding: 2.5rem;
+    }
+}
+
+/* Effetto hover sul card */
+.glass-card:hover {
+    background: rgba(27, 67, 50, 0.25);
+    border-color: rgba(212, 175, 55, 0.5);
+    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.15);
+}
+
+/* ========================================================================
+   SCROLLBAR STYLING
+   ======================================================================== */
+
+#gallery-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+#gallery-container::-webkit-scrollbar-track {
+    background: #FDFBF7;
+    border-radius: 10px;
+}
+
+#gallery-container::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 10px;
+}
+
+#gallery-container::-webkit-scrollbar-thumb:hover {
+    background: #1B4332;
+}
+
+/* ========================================================================
+   ANIMATIONS
+   ======================================================================== */
+
+/* Animation for fade-in on page load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: fadeIn 0.6s ease-in;
+}
+
+/* ========================================================================
+   INTERACTIVE ELEMENTS
+   ======================================================================== */
+
+/* Hover effect for circular images */
+.rounded-full {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rounded-full:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+/* Focus states for accessibility */
+input:focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+/* ========================================================================
+   MOBILE & RESPONSIVE
+   ======================================================================== */
+
+@media (max-width: 640px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .glass-card {
+        background: rgba(27, 67, 50, 0.2);
+    }
+}
+
+/* ========================================================================
+   PRINT STYLES
+   ======================================================================== */
+
+@media print {
+    nav {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+}

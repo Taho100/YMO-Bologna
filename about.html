@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Islamic Youth Organization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-['Poppins'] bg-[#FDFBF7]">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-[#1B4332] shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2 md:gap-3 hover:opacity-80 transition-opacity duration-300">
+                        <!-- Logo Image -->
+                        <img 
+                            src="img/logo ymo.png" 
+                            alt="Islamic Youth Organization Logo" 
+                            class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 object-contain rounded-full border-2 border-[#D4AF37]"
+                        >
+                        <!-- Logo Text -->
+                        <span class="hidden sm:inline text-xl md:text-2xl font-bold text-[#D4AF37]">YMO Bologna</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-[#FDFBF7] hover:text-[#D4AF37] transition-colors duration-300 font-medium">Home</a>
+                    <a href="about.html" class="text-[#FDFBF7] hover:text-[#D4AF37] transition-colors duration-300 font-medium">Chi siamo</a>
+                    <a href="contact.html" class="text-[#FDFBF7] hover:text-[#D4AF37] transition-colors duration-300 font-medium">Contattaci</a>
+                </div>
+
+                <!-- Mobile Hamburger Menu Button -->
+                <div class="md:hidden">
+                    <button id="hamburger-btn" class="text-[#D4AF37] focus:outline-none" aria-label="Toggle menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block text-[#FDFBF7] hover:text-[#D4AF37] py-2 px-4 transition-colors">Home</a>
+                <a href="about.html" class="block text-[#FDFBF7] hover:text-[#D4AF37] py-2 px-4 transition-colors">Chi siamo</a>
+                <a href="contact.html" class="block text-[#FDFBF7] hover:text-[#D4AF37] py-2 px-4 transition-colors">Contattaci</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-[#1B4332] text-[#FDFBF7] py-12 md:py-16 text-center">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Chi Siamo</h1>
+        <p class="text-base sm:text-lg mt-4 text-[#D4AF37]">Scopri la nostra missione e i nostri valori</p>
+    </section>
+
+    <!-- Main Content: Z-Pattern Layout (Responsive) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        
+        <!-- Section 1: Text-Image (Desktop) / Image-Text (Mobile) -->
+        <div class="mb-16 md:mb-20">
+            <div class="flex flex-col-reverse md:flex-row items-center gap-8 lg:gap-12">
+                <!-- Image -->
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                    <img 
+                        src="img/Missione.jpg" 
+                        alt="Missione" 
+                        class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-[#D4AF37] shadow-lg"
+                    >
+                </div>
+                <!-- Text -->
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1B4332] mb-4">La Nostro Missione</h2>
+                    <p class="text-base sm:text-lg text-gray-700 leading-relaxed md:leading-8">
+                        Ci impegniamo a promuovere un ambiente accogliente e inclusivo dove i giovani musulmani possano crescere 
+                        spiritualmente, intellettualmente e socialmente. La nostra missione è creare una comunità che valorizzi ogni 
+                        individuo, aiutandolo a vivere una vita piena di significato guidata dai valori e dai principi islamici, e 
+                        contribuendo attivamente al miglioramento della società.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Image-Text (Desktop) / Image-Text (Mobile) -->
+        <div class="mb-16 md:mb-20">
+            <div class="flex flex-col md:flex-row items-center gap-8 lg:gap-12">
+                <!-- Image -->
+                <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+                    <img 
+                        src="img/valore.jpg" 
+                        alt="Valori" 
+                        class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-[#D4AF37] shadow-lg"
+                    >
+                </div>
+                <!-- Text -->
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1B4332] mb-4">I Nostri Valori</h2>
+                    <p class="text-base sm:text-lg text-gray-700 leading-relaxed md:leading-8">
+                        YMO si concentrano anche sullo sviluppo del senso di appartenenza e sulla promozione dell'integrazione dei 
+                        giovani musulmani nella società, mantenendo comunque la loro identità religiosa.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Text-Image (Desktop) / Image-Text (Mobile) -->
+        <div class="mb-16 md:mb-20">
+            <div class="flex flex-col-reverse md:flex-row items-center gap-8 lg:gap-12">
+                <!-- Image -->
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                    <img 
+                        src="img/perchè.jpg" 
+                        alt="Perchè dovresti unirti a noi?" 
+                        class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-[#D4AF37] shadow-lg"
+                    >
+                </div>
+                <!-- Text -->
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1B4332] mb-4">Perchè dovresti unirti a noi?</h2>
+                    <p class="text-base sm:text-lg text-gray-700 leading-relaxed md:leading-8">
+                        YMO organizza i eventi, attività di volontariato, incontri di studio del Corano, conferenze, workshop e altre 
+                        iniziative destinate a educare, ispirare e sostenere i giovani, aiutandoli a sviluppare una comprensione 
+                        profonda della loro religione e a costruire reti sociali e di supporto.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1B4332] text-[#FDFBF7] py-8 md:py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-sm md:text-base">&copy; YMO (Young Muslims Organization)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
