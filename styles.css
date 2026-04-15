@@ -1,28 +1,17 @@
-/**
- * Islamic Youth Organization Website
- * Custom CSS (Supplementary to Tailwind)
- */
-
 /* Smooth transitions globally */
 * {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* ========================================================================
-   GLASS MORPHISM CARD STYLE - Message of the Week
-   ======================================================================== */
+/*GLASS MORPHISM CARD STYLE - Messaggio su banner */
 
 .glass-card {
     /* Sfondo semi-trasparente con blur effect */
     background: rgba(27, 67, 50, 0.15);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
-    
-    /* Border sottile con sfumatura dorata */
     border: 2px solid rgba(212, 175, 55, 0.3);
     border-radius: 12px;
-    
-    /* Padding responsive */
     padding: 1.5rem;
 }
 
@@ -38,16 +27,13 @@
     }
 }
 
-/* Effetto hover sul card */
 .glass-card:hover {
     background: rgba(27, 67, 50, 0.25);
     border-color: rgba(212, 175, 55, 0.5);
     box-shadow: 0 8px 32px rgba(212, 175, 55, 0.15);
 }
 
-/* ========================================================================
-   SCROLLBAR STYLING
-   ======================================================================== */
+/*SCROLLBAR STYLING*/
 
 #gallery-container::-webkit-scrollbar {
     height: 8px;
@@ -67,11 +53,7 @@
     background: #1B4332;
 }
 
-/* ========================================================================
-   ANIMATIONS
-   ======================================================================== */
-
-/* Animation for fade-in on page load */
+/*Animazione all'inizio dell'entrata*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -87,11 +69,7 @@ body {
     animation: fadeIn 0.6s ease-in;
 }
 
-/* ========================================================================
-   INTERACTIVE ELEMENTS
-   ======================================================================== */
-
-/* Hover effect for circular images */
+/* Hover effect per img di 'chi siamo' */
 .rounded-full {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -101,17 +79,14 @@ body {
     box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
 }
 
-/* Focus states for accessibility */
+/*Focus states for accessibility*/
 input:focus,
 textarea:focus,
 select:focus {
     box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
 }
 
-/* ========================================================================
-   MOBILE & RESPONSIVE
-   ======================================================================== */
-
+/*MOBILE & RESPONSIVE*/
 @media (max-width: 640px) {
     body {
         font-size: 14px;
@@ -122,10 +97,7 @@ select:focus {
     }
 }
 
-/* ========================================================================
-   PRINT STYLES
-   ======================================================================== */
-
+/*PRINT STYLES*/
 @media print {
     nav {
         display: none;
